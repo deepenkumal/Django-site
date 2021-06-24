@@ -1,0 +1,29 @@
+.tag-posts{
+    width: 90%;
+    max-width: 100%;
+    margin: 10px auto; 
+}
+.post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 350px;
+
+}
+
+.post :hover{
+    background-color: blueviolet;
+
+}
+.post a:hover{
+    color: white;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+
+
+

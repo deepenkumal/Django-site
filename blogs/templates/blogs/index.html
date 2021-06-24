@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home Page| {% endblock %}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static 'blogs/index.css' %}">
+<link rel="stylesheet" href="{% static 'blogs/include/post.css' %}">
+
+{% endblock %}
+
+{% block content %}
+<section id="welcome">
+    <header>
+        <div class="row">
+            <div class="col-img">
+                <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                    alt="Deepen blog">
+            </div>
+            <div class="col-text">
+                <h2>Welcome to Deepen's Blog</h2>
+            </div>
+        </div>
+    </header>
+    <p>Hello Iam Deepen , I love to explore new technologies</p>
+</section>
+<section class="latest-post">
+    <h2 class="section-title">Latest Posts</h2>
+    <ul class="post">
+        {% for post in posts %}
+        {% include 'blogs/include/post.html' %}
+        {% endfor %}
+    </ul>
+</section>
+
+{% endblock %}

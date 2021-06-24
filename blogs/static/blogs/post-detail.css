@@ -1,0 +1,158 @@
+.summery {
+  width: 80%;
+  max-width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: #0652dd;
+  height: 16rem;
+  color: white;
+  padding: 10px 40px;
+}
+
+.summery img {
+  width: 12rem;
+  max-width: 80%;
+  border-radius: 12px;
+  transform: rotateZ(5deg);
+  border: 2px solid white;
+}
+.summery h2 {
+  margin: 10px auto;
+  flex-basis: auto;
+  color: #f1f2f6;
+  font-size: 2em;
+}
+.summery article,
+.summery address {
+  font-weight: bold;
+  margin: auto;
+  color: #7bed9f;
+}
+address a {
+  color: white;
+  text-decoration: none;
+}
+.tag {
+  background: #f1f2f6;
+  color: #30336b;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+.tag a {
+  text-decoration: none;
+}
+.post-detail {
+  width: 80%;
+  margin: 10px auto;
+  background-color: #ffff;
+  padding: 10px 20px;
+}
+.post-detail p {
+  margin-top: 10px;
+}
+.read-later {
+  margin-top: 1rem;
+}
+.read-later button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.read-later button:hover{
+background-color: white;
+color: #0652dd
+}
+
+/* user comments */
+.comments {
+  width: 80%;
+  max-width: 60rem;
+  border: 1px solid white;
+  background-color: white;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+.comments ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.comments li {
+  margin: 1.5rem 0;
+  border-bottom: 1px solid rgb(127, 98, 128);
+  padding-bottom: 1rem;
+  width: auto;
+}
+.comments li:last-of-type {
+  border-bottom: none;
+}
+.comments h4 {
+  margin: 5px 0;
+  color: #726d6d;
+}
+
+/* Comments form */
+.comment-section {
+  width: 80%;
+  max-width: 30rem;
+  margin: 3rem auto;
+  border: 1px solid rgb(71, 63, 63);
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: white;
+}
+
+.form-control {
+  display: block;
+  margin-bottom: 1rem;
+}
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  display: block;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  font: inherit;
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.comment-section button {
+  background-color: rgb(52, 33, 161);
+  padding: 5px 10px;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid rgb(23, 78, 23);
+  cursor: pointer;
+}
+
+.comment-section button:hover {
+  background-color: rgb(133, 87, 133);
+}
+
+@media only screen and (max-width: 500px) {
+  .summery {
+    height: 22rem;
+  }
+  .summery img {
+    margin: 10px auto;
+  }
+  .tag {
+    margin: 5px auto;
+  }
+}

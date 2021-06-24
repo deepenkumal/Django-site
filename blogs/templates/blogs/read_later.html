@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Stored Posts|
+{% endblock %}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static 'blogs/saved_post.css' %}">
+<link rel="stylesheet" href="{% static 'blogs/include/post.css' %}">
+
+{% endblock %}
+
+{% block content %}
+{% if has_post %}
+<h1 class="section-title">Saved Posts</h1>
+<section class="saved-posts">
+    <ul class="posts">
+        {% for post in stored_posts %}
+        {% include 'blogs/include/post.html' %}
+        {% endfor %}
+    </ul>
+</section>
+{% else %}
+<h2>You don't have saved posts</h2>
+{% endif %}
+{% endblock %}

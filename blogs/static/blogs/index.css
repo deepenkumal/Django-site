@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+img{
+    background-color: #B33771
+    
+}
+#welcome{
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    background-color: #706fd3
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-img{
+    flex-basis: 20%;
+    height: auto;
+    margin: 2em;
+    min-width: 250px;
+    transform:  rotate(-10deg);
+}
+.col-img img{
+    width:100%;
+    border-radius: 20px ;
+    margin-top: 20px ;
+}
+.col-text  h2{
+    flex-basis: 80%;
+    font-size: 40px;
+    margin: 2em auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+}
+
+#welcome p{
+    font-size: 20px;
+    margin: 2em 2em;
+    padding-bottom: 1em;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.latest-post{
+    width: 90%;
+    max-width: 100%;
+    margin: 10px 25px;
+    margin: auto;
+}
+.post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+    min-width: 400px;
+
+}
+.post :hover{
+    background-color: blueviolet;
+
+}
+.post a:hover{
+    color: white;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+
+#about{
+    margin-bottom: 20px;
+    text-align: center;
+}

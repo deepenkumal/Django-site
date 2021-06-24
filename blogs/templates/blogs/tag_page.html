@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titlt %}
+{{tag}}
+{% endblock %}
+{% block css_file %}
+<link rel="stylesheet" href="{% static 'blogs/tag_page.css' %}">
+<link rel="stylesheet" href="{% static 'blogs/include/post.css' %}">
+{% endblock %}
+
+{% block content %}
+<h2 class="section-title">{{tag |title }}</h2>
+<div class="tag-posts">
+    <ul class="post">
+        {% for post in posts %}
+        {% include 'blogs/include/post.html' %}
+        {% endfor %}
+    </ul>
+
+
+</div>
+
+{% endblock %}
